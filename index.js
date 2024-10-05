@@ -41,6 +41,13 @@ app.get('/2plus2', (request, response) => {
 	response.send('4')
 })
 
+// rolling dice, return random value between 1-6 on 5 dice
+app.get('/rolldice', (request, response) => {
+	console.log('Calling "/rolldice" on the Node.js server.')
+	response.type('text/plain')
+	response.send('5')
+})
+
 // Add x and y which are both passed in on the URL. 
 app.get('/add-two-integers', (request, response) => {
 	console.log('Calling "/add-two-integers" on the Node.js server.')
